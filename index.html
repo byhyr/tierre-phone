@@ -21,8 +21,8 @@
   <script type="text/babel">
     const { useState, useEffect, useMemo } = React;
 
-    const LOCKSCREEN_BG_URL = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80";
-    const HOMESCREEN_BG_URL = "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=80";
+    const LOCKSCREEN_BG_URL = "https://pin.it/56bWM1wN4";
+    const HOMESCREEN_BG_URL = "https://pin.it/4G1MFaLgH";
     const PASSCODE_CODE = "2917229";
 
     const GALLERY_IMAGES = [
@@ -38,17 +38,17 @@
     ];
 
     const CHAT_MESSAGES = [
-      { id: 1, sender: "them", text: "Hey! You free later?", time: "9:11 AM" },
-      { id: 2, sender: "me", text: "Yep, I can do 7pm. Want to grab coffee?", time: "9:13 AM" },
-      { id: 3, sender: "them", text: "Perfect, see you at the usual spot.", time: "9:14 AM" },
-      { id: 4, sender: "me", text: "Sounds good 😄", time: "9:14 AM" }
+      { id: 1, sender: "pipev💋", gtext: "jangan lupa jemput El", time: "9:11 AM" },
+      { id: 2, sender: "me", text: "ok, sayang. dedek kei lagi apa?", time: "9:13 AM" },
+      { id: 3, sender: "pipev💋", text: "minum susu, papa~", time: "9:14 AM" },
+      { id: 4, sender: "me", text: "ih mau jugaaa🥺", time: "9:14 AM" }
     ];
 
     const REMINDERS_LIST = [
-      { id: 1, title: "Call mom", due: "Today", priority: "High", checked: false },
-      { id: 2, title: "Book flight to Tokyo", due: "Tue", priority: "Medium", checked: false },
-      { id: 3, title: "Pick up dry cleaning", due: "Today", priority: "Low", checked: true },
-      { id: 4, title: "Submit design review", due: "Tomorrow", priority: "High", checked: false }
+      { id: 1, title: "Jemput El", due: "Today", priority: "High", checked: false },
+      { id: 2, title: "Weekly Meeting!", due: "Tue", priority: "Medium", checked: false },
+      { id: 3, title: "Ke rumah sakit", due: "Today", priority: "Low", checked: true },
+      { id: 4, title: "Meet Papa", due: "Tomorrow", priority: "High", checked: false }
     ];
 
     function App() {
@@ -120,13 +120,13 @@
                 <div className="relative z-10 flex flex-col items-center gap-4">
                   <div className="w-full bg-white/10 backdrop-blur-md rounded-2xl p-3.5 border border-white/20 text-xs">
                     <p className="text-white/60">Now Playing</p>
-                    <p className="font-semibold text-sm mt-0.5">Midnight City — M83</p>
+                    <p className="font-semibold text-sm mt-0.5">You! - Lany</p>
                   </div>
                   <button 
                     onClick={() => setShowKeypad(true)}
                     className="text-xs tracking-widest text-white/90 bg-white/15 px-6 py-2.5 rounded-full backdrop-blur-md border border-white/20"
                   >
-                    SWIPE UP / TAP TO UNLOCK
+                    SWIPE UP
                   </button>
                 </div>
               ) : (
